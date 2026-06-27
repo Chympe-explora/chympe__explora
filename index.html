@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chympe Explora</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:#0b3d2e;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:url('your-image.jpg') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background-color:#000;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0b3d2e;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.price{
+    text-align:center;
+    font-size:35px;
+    color:#0b3d2e;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#0b3d2e;
+    color:white;
+    border:none;
+    padding:15px;
+    width:100%;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#0b3d2e;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Chympe Explora</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>CHYMPE EXPLORA</h1>
+        <p>Explore • Experience • Memories</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section>
+    <h2>Key Highlights</h2>
+    <div class="cards">
+        <div class="card">Chympe Fall</div>
+        <div class="card">Krem Chympe Cave</div>
+        <div class="card">Adventure Trekking</div>
+        <div class="card">Hidden Natural Destination</div>
+    </div>
+</section>
+
+<section id="overview">
+    <h2>Destination Overview</h2>
+
+    <p><strong>Location:</strong> Khaddum, East Jaintia Hills</p>
+    <br>
+
+    <p><strong>Trek Duration:</strong> Approximately 2 hours to Chympe Fall.</p>
+    <br>
+
+    <p><strong>Cave Distance:</strong> Approximately 7 minutes from the waterfall.</p>
+    <br>
+
+    <p><strong>Best Time to Visit:</strong> October to April.</p>
+    <br>
+
+    <p>The team's responsibility begins from Brichyrnot Village and continues until completion of the tour.</p>
+</section>
+
+<section id="facilities">
+    <h2>Facilities</h2>
+
+    <div class="cards">
+        <div class="card">Experienced Guide</div>
+        <div class="card">Life Jacket</div>
+        <div class="card">Torch</div>
+        <div class="card">First Aid Service</div>
+        <div class="card">Stay Accommodation</div>
+        <div class="card">4×4 Pickup & Drop</div>
+    </div>
+</section>
+
+<section>
+    <h2>Exclusive Experiences</h2>
+
+    <div class="cards">
+        <div class="card">Waterfall Exploration</div>
+        <div class="card">Cave Adventure</div>
+        <div class="card">Photography</div>
+        <div class="card">Nature Experience</div>
+    </div>
+</section>
+
+<section id="itinerary">
+    <h2>Tour Itinerary</h2>
+
+    <h3>Day 1</h3>
+    <p>Arrival at Brichyrnot Village, check-in and rest.</p>
+
+    <br>
+
+    <h3>Day 2</h3>
+    <p>Begin trekking from Brichyrnot Village.</p>
+    <p>Explore Chympe Fall.</p>
+    <p>Explore Krem Chympe Cave.</p>
+    <p>Return and departure.</p>
+</section>
+
+<section>
+    <h2>Advisory</h2>
+
+    <ul>
+        <li>Be physically prepared.</li>
+        <li>Wear trekking shoes.</li>
+        <li>Follow guide instructions.</li>
+        <li>Weather conditions may change.</li>
+        <li>Avoid littering.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Terms & Conditions</h2>
+
+    <p>No refunds due to weather conditions, natural disasters, pandemics, or unavoidable situations.</p>
+
+    <br>
+
+    <p>Chympe Explora reserves the right to modify the experience and pricing due to weather, route closure, accommodation availability, or restrictions.</p>
+</section>
+
+<section id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="price">
+        ₹3,500 Per Person
+    </div>
+
+    <br>
+
+    <p><strong>Includes:</strong></p>
+
+    <ul>
+        <li>Guide</li>
+        <li>Life Jacket</li>
+        <li>Torch</li>
+        <li>First Aid Service</li>
+    </ul>
+
+    <br>
+
+    <p>Additional services such as stay, 4×4 pickup and drop, and special requirements are available separately.</p>
+</section>
+
+<section id="booking">
+    <h2>Book This Tour</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="tel" placeholder="Mobile Number" required>
+
+        <input type="number" placeholder="Number of Visitors">
+
+        <input type="date">
+
+        <input type="text" placeholder="Activities Required">
+
+        <textarea placeholder="Special Requirements"></textarea>
+
+        <button type="submit">
+            Book Now
+        </button>
+    </form>
+</section>
+
+<section>
+    <h2>Reviews</h2>
+
+    <div class="cards">
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <br><br>
+            Amazing experience!
+        </div>
+
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <br><br>
+            Beautiful waterfall and cave.
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Phone:</strong> +91 8787679579</p>
+
+    <br>
+
+    <p><strong>Email:</strong> chympeexplora@gmail.com</p>
+
+    <br>
+
+    <p>Need help, support, or want to submit a complaint? Contact our team.</p>
+</section>
+
+<footer>
+    <h2>CHYMPE EXPLORA</h2>
+
+    <p>Explore • Experience • Memories</p>
+
+    <br>
+
+    <p>📞 +91 8787679579</p>
+
+    <p>📧 chympeexplora@gmail.com</p>
+
+    <br>
+
+    <p>© 2026 Chympe Explora. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
